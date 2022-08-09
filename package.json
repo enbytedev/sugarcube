@@ -1,0 +1,29 @@
+{
+  "name": "sugarcube",
+  "version": "0.0.5",
+  "description": "Common library for Enbyte projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enbytedev/sugarcube.git"
+  },
+  "keywords": [
+    "logger",
+    "library",
+    "utility",
+    "JavaScript"
+  ],
+  "author": "enbytedev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/enbytedev/sugarcube/issues"
+  },
+  "homepage": "https://github.com/enbytedev/sugarcube#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "moment": "^2.29.4"
+  }
+}
