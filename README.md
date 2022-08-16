@@ -70,6 +70,20 @@ Produces
 
 <details>
   <summary>
+    Update Checker
+  </summary>
+  
+  <b>.github</b>: Queries GitHub releases for a repository.
+  <br><b>Args:</b><br>String: GitHub API endpoint<br>String: Local Version<br> Boolean: Whether or not to print in the console a check is being run if no update is available.
+  <br><br><b>Example:</b> `updateChecker.github("https://api.github.com/repos/enbytedev/filing-saucer/releases/latest", fsutils.jsonValue("./package.json", "version"), false);`
+  <br>
+  <br><b>.custom</b>: Queries a remote JSON file with specified keys.
+  <br><b>Args:</b><br>String: GitHub API endpoint<br>String: Local Version<br> Boolean: Whether or not to print in the console a check is being run if no update is available.<br>String: Key to get remote JSON value for version<br>String: Key to get remote JSON value for download link.
+  <br><br><b>Example:</b> `updateChecker.custom('https://example.com/file.json', '1.0.0', false, 'version', 'download');`
+</details>
+
+<details>
+  <summary>
     Small Helpers
   </summary>
   

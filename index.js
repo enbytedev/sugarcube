@@ -1,12 +1,11 @@
-// Logging Utilities
+const updateChecker = require('./utils/updateChecker');
+
 const logger = require('./utils/logger');
 
-// Misc Utilities
 const misc = { 
     rnum: require('./utils/misc/rnum') 
 };
 
-// Filesystem Utilities
 const fsutils = { 
     fileExists: require ('./utils/filesystem/fileExists'),
     jsonValue: require ('./utils/filesystem/jsonValue')
@@ -14,6 +13,7 @@ const fsutils = {
 
 // sugarcube itself.
 const sugarcube = {
+    updateChecker,
     logger,
     misc,
     fsutils,
