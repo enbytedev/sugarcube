@@ -1,22 +1,12 @@
-const updateChecker = require('./utils/updateChecker');
+const logger = require('./cubes/logger');
+const getValue = require('./cubes/getValue');
+const generate = require('./cubes/generate');
 
-const logger = require('./utils/logger');
 
-const misc = { 
-    rnum: require('./utils/misc/rnum') 
-};
-
-const fsutils = { 
-    fileExists: require ('./utils/filesystem/fileExists'),
-    jsonValue: require ('./utils/filesystem/jsonValue')
-};
 
 // sugarcube itself.
-const sugarcube = {
-    updateChecker,
+module.exports = {
     logger,
-    misc,
-    fsutils,
+    getValue,
+    generate,
 };
-  
-module.exports = sugarcube;

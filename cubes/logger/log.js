@@ -1,7 +1,7 @@
 const moment = require('moment');
 const colors = require('colors');
 
-const logger = {
+const log = {
     info: (message) => {
         console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss:ms')}]`.gray+` INFO  > `.cyan.bold+`${message}`.gray);
     },
@@ -13,4 +13,4 @@ const logger = {
     }
 }
 
-module.exports = logger;
+module.exports = log;
