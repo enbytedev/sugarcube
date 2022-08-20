@@ -1,4 +1,4 @@
-const log = require('../logger/log');
+const log = require('../log/log');
 
 function objectProperty(obj, property) {
     return property

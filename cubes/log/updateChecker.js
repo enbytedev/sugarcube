@@ -1,4 +1,4 @@
-const log = require('../logger/log');
+const log = require('./log');
 const axios = require('axios');
 
 const updateChecker = {
