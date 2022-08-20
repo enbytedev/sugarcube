@@ -1,9 +1,8 @@
 const fs = require('fs');
-const fileExists = require('./fileExists');
 
-function jsonValue(path, ...args) {
+function jsonKeySearch(path, ...args) {
     // If the input is invalid or if the file doesn't exist, return null.
-    if (path === undefined || args === undefined || !fileExists(path)) {
+    if (path === undefined || args === undefined || !fs.existsSync(path)) {
         return null;
     }
     // Read the file and parse it as JSON.
@@ -15,4 +14,4 @@ function jsonValue(path, ...args) {
 
 }
 
-module.exports = jsonValue;
+module.exports = jsonKeySearch;
