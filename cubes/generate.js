@@ -1,1 +1,0 @@
-module.exports.randomNumber = require('./generate/randomNumber');

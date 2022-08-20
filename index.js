@@ -1,10 +1,10 @@
 const log = require('./cubes/log');
 const getValue = require('./cubes/getValue');
-const generate = require('./cubes/generate');
+const misc = require('./cubes/misc');
 
 // sugarcube itself.
 module.exports = {
     log,
     getValue,
-    generate,
+    misc,
 };
