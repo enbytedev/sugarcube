@@ -8,7 +8,6 @@ function replaceRegex(input, replacement, ...args) {
 
     for (var i = 2; i < arguments.length; ++i) {
     do {
-        console.log(arguments[i])
         out = out.replace(arguments[i], replacement)
      } while (out.match(arguments[i]));
 

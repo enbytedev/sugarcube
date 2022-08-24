@@ -1,5 +1,3 @@
-const log = require('../log/log');
-
 function objectProperty(obj, property) {
     return property
       .split('.')
@@ -7,7 +5,7 @@ function objectProperty(obj, property) {
         if (obj[key] !== undefined) {
           return obj[key];
         } else {
-          log.warn('Property ' + property + ' is not defined in the provided object. Returning whole object.')
+          console.warn('Property ' + property + ' is not defined in the provided object. Returning whole object.')
           return obj;
         }
       }, obj)
