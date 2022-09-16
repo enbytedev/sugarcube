@@ -1,8 +1,10 @@
-const getValue = require('./cubes/getValue');
-const misc = require('./cubes/misc');
+const randomNumber = require('./cubes/randomNumber');
+const replaceRegex = require('./cubes/replaceRegex');
+const updateChecker = require('./cubes/updateChecker');
 
 // sugarcube itself.
 module.exports = {
-    getValue,
-    misc,
+    randomNumber,
+    replaceRegex,
+    updateChecker
 };

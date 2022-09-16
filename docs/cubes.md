@@ -1,6 +1,6 @@
-## Misc
+## Sugarcubes
 
-Misc. tools!
+Below are the current capabilites provided by sugarcube.
 ----
 
 ### Random Number

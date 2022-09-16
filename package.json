@@ -1,10 +1,10 @@
 {
   "name": "sugarcube",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "Common library for Enbyte projects.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -23,8 +23,9 @@
   },
   "homepage": "https://github.com/enbytedev/sugarcube#readme",
   "dependencies": {
-    "axios": "^0.27.2",
-    "colors": "^1.4.0",
-    "moment": "^2.29.4"
+    "axios": "^0.27.2"
+  },
+  "devDependencies": {
+    "jest": "^29.0.3"
   }
 }
